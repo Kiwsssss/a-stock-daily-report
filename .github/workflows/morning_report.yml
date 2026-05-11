@@ -28,6 +28,7 @@ jobs:
     - name: Run morning report script
       env:
         DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       run: |
         cd scripts
         python morning_report.py
