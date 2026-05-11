@@ -22,8 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # 如果需要额外的依赖，在这里添加
-        # pip install requests beautifulsoup4
+        pip install akshare
     
     - name: Run evening report script
       env:
